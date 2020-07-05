@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name = "GuanQiaview">
+        <attr name = "background" format = "reference" />
+        <attr name="text" format="string"/>
+        <attr name="rating" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name = "WordView">
+        <attr name="word_text" format="string"/>
+        <attr name="class_text" format="string"/>
+        <attr name="mean_text" format="string"/>
+        <attr name="sentence_text" format="string"/>
+        <attr name="interpret_text" format="string"/>
+        <attr name="phrase_text" format="string"/>
+    </declare-styleable>
+</resources>

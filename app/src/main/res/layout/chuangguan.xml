@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/qianblue"
+        tools:context="com.example.hibana.englishproject.ChuangGuan">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#87CEFA">
+        <ImageView
+                android:id="@+id/cg_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/close" />
+        <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="第一关"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/examword"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="36dp"
+                    android:textStyle="bold"/>
+            <LinearLayout
+                    android:id="@+id/exam"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Button
+                        android:id="@+id/cg_bn1"
+                        android:layout_weight="1"
+                        android:layout_margin="30dp"
+                        android:textSize="24dp"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                <Button
+                        android:id="@+id/cg_bn2"
+                        android:textSize="24dp"
+                        android:layout_weight="1"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                <Button
+                        android:id="@+id/cg_bn3"
+                        android:textSize="24dp"
+                        android:layout_weight="1"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                <Button
+                        android:id="@+id/cg_bn4"
+                        android:textSize="24dp"
+                        android:layout_weight="1"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                <Button
+                        android:id="@+id/next"
+                        android:textSize="24dp"
+                        android:layout_margin="30dp"
+                        android:background="@drawable/border"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

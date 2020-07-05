@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              tools:context="com.example.hibana.englishproject.SignDate" tools:ignore="MissingDefaultResource">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#87CEFA">
+
+        <ImageView
+                android:id="@+id/sd_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/back_white" />
+        <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="签到"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+    </LinearLayout>
+
+    <com.example.hibana.englishproject.SignDate
+            android:id="@+id/signDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </com.example.hibana.englishproject.SignDate>
+    <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+    >
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="签  到"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="#87CEFA"
+                android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gq_ly"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:orientation="vertical" tools:ignore="MissingDefaultResource">
+    <TextView
+        android:id="@+id/gq_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="第一关"
+        android:textSize="24dp" />
+
+    <RatingBar
+        android:id="@+id/gq_rb"
+        android:layout_gravity="center"
+        style="@style/roomRatingBar_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:isIndicator="true"
+        android:numStars="3"
+        android:rating="0"
+        android:stepSize="0.25" />
+</LinearLayout>

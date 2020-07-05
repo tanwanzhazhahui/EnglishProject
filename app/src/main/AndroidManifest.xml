@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.englishproject">
+
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- SD卡写入权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name="com.example.hibana.englishproject.StartLearn">
+        </activity>
+        <activity
+                android:name="com.example.hibana.englishproject.ChuangGuan"
+                android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.example.hibana.englishproject.CuoTiBen">
+        </activity>
+        <activity android:name="com.example.hibana.englishproject.MainActivity">
+        </activity>
+        <activity
+                android:name="com.example.hibana.englishproject.LoginPage"
+                android:label="邻家英语">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.hibana.englishproject.RegisterPage"/>
+        <activity
+                android:name="com.example.hibana.englishproject.ChangePwdPage"/> <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
+        <meta-data
+                android:name="Mob-AppKey"
+                android:value="2b9f038d22a36"/>
+        <meta-data
+                android:name="Mob-AppSecret"
+                android:value="dc3137c06b1176dd63b44eeb89efb108"/> <!-- 这个必须得加，短信Mob模块依赖 -->
+        <activity
+                android:name="com.mob.tools.MobUIShell"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.example.hibana.englishproject.PersonalCenter">
+        </activity>
+        <activity android:name="com.example.hibana.englishproject.Purse"/>
+        <activity android:name="com.example.hibana.englishproject.Set"/>
+        <activity
+                android:name="com.example.hibana.englishproject.GuanQia"
+                android:launchMode="singleTask">
+        </activity>
+        <activity
+                android:name="com.example.hibana.englishproject.UploadAvator"
+                android:label="修改个人头像"
+                android:launchMode="singleTask">
+        </activity>
+        <activity
+                android:name="com.example.hibana.englishproject.UploadUserName"
+                android:launchMode="singleTask">
+        </activity>
+        <activity
+                android:name="com.example.hibana.englishproject.UploadUserEmail"
+                android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.example.hibana.englishproject.UploadUserPassword">
+        </activity>
+        <activity android:name="com.example.hibana.englishproject.UploadUserTradePassword">
+        </activity>
+        <activity android:name="com.example.hibana.englishproject.QianDao">
+        </activity>
+    </application>
+
+</manifest>
